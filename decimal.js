@@ -1972,7 +1972,7 @@
     }
 
     if ((v = obj[p = 'LN10']) !== void 0) {
-        if (v == Math.LN10) this[p] = new this(v);
+        if ((+v).toFixed(15) == Math.LN10) this[p] = new this(v);
         else throw Error(invalidArgument + p + ': ' + v);
     }
 
